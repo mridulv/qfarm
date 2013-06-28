@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+	<Gather action="handle-user-input.php" numDigits="6">
+		<Say>Welcome to Q Farm.</Say>
+		<Say>Please enter your 6-digit Q I D.</Say>
+		<!--<Say>To check your package status, press 3.</Say>-->
+	</Gather>
+	<!-- If customer doesn't input anything, prompt and try again. -->
+	<Say>Sorry, I didn't get your response.</Say>
+	<Redirect>handle-incoming-call.xml</Redirect>
+</Response>
