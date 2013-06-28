@@ -11,9 +11,9 @@
 	$arr = explode(',',$arr);
 	$a = $arr[$num];
 	
-	mysql_connect("localhost","shantanu_qf","chaapdoredux1")
+	mysql_connect("localhost","","")
 	or die("<h3>could not connect to MySQL</h3>\n");
-	mysql_select_db("shantanu_qfarm")
+	mysql_select_db("db_name")
 	or die("<h3>could not select database 'qfarm'</h3>\n");
 	echo '<Say> Deleting Entry number '.$a.' </Say>';
 	$result = mysql_query('delete from user_products where id="'.$a.'"');

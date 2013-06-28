@@ -11,9 +11,9 @@
 	$arr = explode(',',$arr);
 	$a = $arr[$num];
 	
-	mysql_connect("localhost","shantanu_qf","chaapdoredux1")
+	mysql_connect("localhost","","")
 	or die("<h3>could not connect to MySQL</h3>\n");
-	mysql_select_db("shantanu_qfarm")
+	mysql_select_db("db_name")
 	or die("<h3>could not select database 'qfarm'</h3>\n");
 	
 	echo '<Gather action="modify-request4.php?val='.$a.'" numDigits="1">';

@@ -8,9 +8,9 @@
 	$user_password = (int) $_REQUEST['Digits'];
 	# @end snippet
 	$user_number=$_REQUEST['user_number'];
-	mysql_connect("localhost","shantanu_qf","chaapdoredux1")
+	mysql_connect("localhost","","")
 	or die("<h3>could not connect to MySQL</h3>\n");
-	mysql_select_db("shantanu_qfarm")
+	mysql_select_db("db_name")
 	or die("<h3>could not select database 'qfarm'</h3>\n");
 	//echo '<Say>Your Username is '.$user_number.'</Say>';
 	//echo '<Say>Your Password is '.$user_password.'</Say>';

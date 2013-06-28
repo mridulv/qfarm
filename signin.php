@@ -2,7 +2,7 @@
   if (isset($_REQUEST['signup'])){
 		mysql_connect("localhost","shantanu_qfarmdb","qfarmdbphoddo!")
 		or die("<h3>could not connect to MySQL</h3>\n");
-		mysql_select_db("shantanu_qfarm")
+		mysql_select_db("db_name")
 		or die("<h3>could not select database 'shantanu_qfarm'</h3>\n");
 		
 		$a=$_REQUEST['username'];
